@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" viewport="700x290" name="Surfaces: Card, WindowFrame" subtitle="Cartões e janela terminal" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:var(--bg-page)}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const {Card,WindowFrame,Badge}=window.CoreDotDesignSystem_317a5b;
+ReactDOM.createRoot(document.getElementById('root')).render(
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:18}}>
+  <Card accent><div style={{fontFamily:'var(--font-terminal)',fontSize:26,color:'var(--amarelo)',marginBottom:12}}>&lt;/&gt;</div><div style={{fontFamily:'var(--font-pixel)',fontSize:12,lineHeight:1.7,color:'var(--branco-quente)',marginBottom:10}}>Sites e landing pages</div><div style={{fontSize:14,color:'var(--cinza)'}}>Interfaces modernas, responsivas e alinhadas à identidade da marca.</div></Card>
+  <WindowFrame title="coredot — boot.sh"><div style={{color:'var(--amarelo-claro)'}}>&gt; inicializando CoreDot...</div><div style={{color:'var(--verde)'}}>&gt; pronto para construir<span className="cd-cursor" style={{marginLeft:5}}></span></div></WindowFrame>
+</div>);
+</script></body></html>

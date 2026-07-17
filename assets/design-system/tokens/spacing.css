@@ -1,0 +1,6 @@
+:root{
+/* escala base 4px — a landing respira: seções 90px, grids 20px */
+--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:90px;--space-10:110px;
+--section-pad:90px;--card-pad:26px;--stack-gap:24px;--grid-gap:20px;
+--container-max:1180px;
+}

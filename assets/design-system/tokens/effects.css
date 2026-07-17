@@ -1,0 +1,14 @@
+:root{
+/* SEM cantos arredondados — tudo reto, exceto os dots de janela (círculos) */
+--radius-card:0;--radius-control:0;--radius-tag:0;--radius-full:999px;
+/* sombras pixel duras (deslocadas, sem blur) */
+--shadow-btn:4px 4px 0 var(--amarelo-sombra); /* @kind shadow */
+--shadow-card:8px 8px 0 rgba(255,212,0,.08);
+--shadow-modal:10px 10px 0 rgba(255,212,0,.15); /* @kind shadow */
+/* glow ambiente: radial suave amarelo em seções de destaque */
+--glow-radial:radial-gradient(ellipse 60% 50% at 70% 30%,rgba(255,212,0,.08),transparent 70%); /* @kind other */
+--dur-fast:.12s; /* @kind other */
+--dur-med:.15s; /* @kind other */
+--dur-slow:.5s; /* @kind other */
+--ease-soft:ease-in-out; /* @kind other */
+}

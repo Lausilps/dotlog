@@ -1,0 +1,10 @@
+body{margin:0;background:var(--bg-page);color:var(--text-body);font-family:var(--font-body);font-size:var(--text-body-size);line-height:var(--leading-body);overflow-x:hidden}
+a{color:var(--link);text-decoration:none}
+a:hover{color:var(--link-hover)}
+::selection{background:var(--amarelo);color:var(--on-accent)}
+:focus-visible{outline:2px solid var(--amarelo);outline-offset:3px}
+img.cd-sprite{image-rendering:pixelated}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes glowpulse{0%,100%{opacity:.5}50%{opacity:.9}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

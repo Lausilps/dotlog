@@ -1,0 +1,18 @@
+:root{
+/* base — valores exatos da landing CoreDot */
+--preto-0:#0D0D0D;--preto-1:#151515;--preto-2:#1d1d1d;--preto-3:#1d1d1d;
+--branco-quente:#FFFDF2;--cinza:#8C8C8C;--borda:#2c2c2c;
+--amarelo:#FFD400;--amarelo-claro:#FFE873;--amarelo-sombra:#3a3200;
+--verde:#27c93f;--vermelho:#ff5f56;--laranja:#ffbd2e;
+/* compat (nomes antigos) */
+--creme:#FFFDF2;--creme-2:#FFFDF2;--creme-3:#8C8C8C;--amarelo-profundo:#FFD400;--amarelo-suave:#FFE873;--verde-pixel:#27c93f;--azul-gelo:#bfe3ff;
+/* aliases semânticos */
+--bg-page:var(--preto-0);--bg-section:var(--preto-1);
+--surface-card:var(--preto-1);--surface-panel:var(--preto-0);--surface-raised:var(--preto-1);--surface-screenshot:var(--preto-2);
+--text-title:var(--branco-quente);--text-body:var(--branco-quente);--text-muted:var(--cinza);
+--accent:var(--amarelo);--accent-strong:var(--amarelo);--accent-soft:var(--amarelo-claro);
+--on-accent:#0D0D0D;
+--success:var(--verde);--danger:var(--vermelho);--warning:var(--laranja);
+--border-strong:var(--amarelo);--border-soft:var(--borda);--border-faint:var(--borda);
+--link:var(--amarelo);--link-hover:var(--amarelo-claro);
+}

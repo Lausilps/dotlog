@@ -1,0 +1,68 @@
+/**
+ * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
+ * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ */
+
+import '@/global.css';
+
+import { Platform } from 'react-native';
+
+// TODO: substituir pelos valores exatos do design system da CoreDot assim que extraído.
+export const Colors = {
+  light: {
+    text: '#000000',
+    background: '#FDF6E3', // creme
+    backgroundElement: '#F0EAD6',
+    backgroundSelected: '#F5E6A8',
+    textSecondary: '#4A4A4A',
+    accent: '#FFD400', // amarelo CoreDot
+  },
+  dark: {
+    text: '#FDF6E3', // creme
+    background: '#000000',
+    backgroundElement: '#1A1A1A',
+    backgroundSelected: '#2A2A1A',
+    textSecondary: '#B0B0B0',
+    accent: '#FFD400', // amarelo CoreDot
+  },
+} as const;
+
+export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
+
+export const Fonts = Platform.select({
+  ios: {
+    /** iOS `UIFontDescriptorSystemDesignDefault` */
+    sans: 'system-ui',
+    /** iOS `UIFontDescriptorSystemDesignSerif` */
+    serif: 'ui-serif',
+    /** iOS `UIFontDescriptorSystemDesignRounded` */
+    rounded: 'ui-rounded',
+    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
+    mono: 'ui-monospace',
+  },
+  default: {
+    sans: 'normal',
+    serif: 'serif',
+    rounded: 'normal',
+    mono: 'monospace',
+  },
+  web: {
+    sans: 'var(--font-display)',
+    serif: 'var(--font-serif)',
+    rounded: 'var(--font-rounded)',
+    mono: 'var(--font-mono)',
+  },
+});
+
+export const Spacing = {
+  half: 2,
+  one: 4,
+  two: 8,
+  three: 16,
+  four: 24,
+  five: 32,
+  six: 64,
+} as const;
+
+export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
+export const MaxContentWidth = 800;
