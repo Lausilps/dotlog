@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="110" viewBox="0 0 440 110">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    text { font-family: 'Press Start 2P', monospace; }
+  </style>
+  <text x="30" y="66" font-size="40" fill="#FFFDF2">Dot</text>
+  <text x="164" y="66" font-size="40" fill="#FFD400">&#8226;</text>
+  <text x="204" y="66" font-size="40" fill="#FFFDF2">Log</text>
+</svg>
